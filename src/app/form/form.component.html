@@ -1,0 +1,13 @@
+<ol>
+  <li>
+    <mat-form-field>
+      <input matInput [(ngModel)]="name" placeholder="What's your name?">
+    </mat-form-field>
+  </li>
+  <li>
+    <button mat-raised-button (click)="openDialog()">Log in</button>
+  </li>
+  <li *ngIf="password">
+    Your password is: <i>{{password}}</i>
+  </li>
+</ol>
