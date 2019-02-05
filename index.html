@@ -12,6 +12,17 @@
 
   <app-form></app-form>
 
+  <custom-button></custom-button>
+
+
+  <script>
+    const button = document.querySelector('custom-button');
+    button.addEventListener('action', (event) => {
+      console.log(`"action" emitted: ${event.detail}`);
+    })
+    setTimeout(() => button.label = 'Second Value', 3000);
+
+  </script>
 </body>
 
 </html>
